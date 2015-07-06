@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="edit_on_doubleclick" content="/">
+<meta name="robots" content="index,nofollow">
+
+<title>BashFAQ/031 - Greg's Wiki</title>
+<script type="text/javascript" src="BashFAQ_031%20-%20Greg%27s%20Wiki_files/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+<script type="text/javascript">
+<!-- // GUI edit link and i18n
+var gui_editor_link_href = "/BashFAQ/031?action=edit&editor=gui";
+var gui_editor_link_text = "Edit (GUI)";
+//-->
+</script>
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="BashFAQ_031%20-%20Greg%27s%20Wiki_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="BashFAQ_031%20-%20Greg%27s%20Wiki_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="BashFAQ_031%20-%20Greg%27s%20Wiki_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="BashFAQ_031%20-%20Greg%27s%20Wiki_files/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static198/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="Greg's Wiki: BashFAQ/031" href="http://mywiki.wooledge.org/BashFAQ/031?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=BashFAQ%2F031&amp;ddiffs=1" type="application/rss+xml">
+<link rel="alternate" type="application/wiki" title="Edit" href="http://mywiki.wooledge.org/BashFAQ/031?action=edit">
+
+<link rel="Start" href="http://mywiki.wooledge.org/EnglishFrontPage">
+<link rel="Alternate" title="Wiki Markup" href="http://mywiki.wooledge.org/BashFAQ/031?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="http://mywiki.wooledge.org/BashFAQ/031?action=print">
+<link rel="Up" href="http://mywiki.wooledge.org/BashFAQ">
+<link rel="Search" href="http://mywiki.wooledge.org/FindPage">
+<link rel="Index" href="http://mywiki.wooledge.org/TitleIndex">
+<link rel="Glossary" href="http://mywiki.wooledge.org/WordIndex">
+<link rel="Help" href="http://mywiki.wooledge.org/HelpOnFormatting">
+</head>
+
+<body dir="ltr" lang="en">
+
+<div id="header">
+
+<form id="searchform" method="get" action="/BashFAQ/031">
+<div>
+<input name="action" value="fullsearch" type="hidden">
+<input name="context" value="180" type="hidden">
+<label style="display: none;" for="searchinput">Search:</label>
+<input class="disabled" id="searchinput" name="value" value="Search" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" type="text">
+<input disabled="disabled" id="titlesearch" name="titlesearch" value="Titles" alt="Search Titles" type="submit">
+<input disabled="disabled" id="fullsearch" name="fullsearch" value="Text" alt="Search Full Text" type="submit">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="http://mywiki.wooledge.org/EnglishFrontPage"><img src="BashFAQ_031%20-%20Greg%27s%20Wiki_files/moinmoin.png" alt="MoinMoin Logo"></a></div>
+<div id="username"><a href="http://mywiki.wooledge.org/BashFAQ/031?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><span class="pagepath"><a href="http://mywiki.wooledge.org/BashFAQ">BashFAQ</a></span><span class="sep">/</span><a href="http://mywiki.wooledge.org/BashFAQ/031">031</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="http://mywiki.wooledge.org/BashGuide">BashGuide</a></li><li class="wikilink"><a href="http://mywiki.wooledge.org/BashFAQ">BashFAQ</a></li><li class="wikilink"><a href="http://mywiki.wooledge.org/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="http://mywiki.wooledge.org/FindPage">FindPage</a></li><li class="wikilink"><a href="http://mywiki.wooledge.org/HelpContents">HelpContents</a></li><li class="current"><a href="http://mywiki.wooledge.org/BashFAQ/031">BashFAQ/031</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><a href="http://mywiki.wooledge.org/BashFAQ/031?action=edit&amp;editor=text" name="texteditlink" rel="nofollow">Edit (Text)</a></li><li><a href="http://mywiki.wooledge.org/BashFAQ/031?action=edit&amp;editor=gui">Edit (GUI)</a></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="http://mywiki.wooledge.org/BashFAQ/031?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="http://mywiki.wooledge.org/BashFAQ/031?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/BashFAQ/031">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option selected="selected" value="show">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Delete Page</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Subscribe User</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Remove Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" dir="ltr" lang="en">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867"><span class="anchor" id="faq31"></span> <span class="anchor" id="line-2"></span>== What is the difference between test, [ and [[ ? ==  <span class="anchor" id="line-3"></span><tt class="backtick">[</tt> ("test" command) and <tt class="backtick">[[</tt> ("new test" command) are used to evaluate expressions.  <tt class="backtick">[[</tt> works only in Bash, Zsh and the Korn shell, and is more powerful; <tt class="backtick">[</tt> and <tt class="backtick">test</tt> are available in POSIX shells.  Here are some examples: <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span></p><p class="line867"><span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span></p><pre><span class="anchor" id="line-1"></span>#POSIX
+<span class="anchor" id="line-2"></span>[ "$variable" ] || echo 'variable is unset or empty!' &gt;&amp;2
+<span class="anchor" id="line-3"></span>[ -f "$filename" ] || printf 'File does not exist or is not a regular file: %s\n' "$filename" &gt;&amp;2</pre><span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><p class="line867"><span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span><span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span></p><pre><span class="anchor" id="line-1-1"></span>if [[ ! -e $file ]]; then
+<span class="anchor" id="line-2-1"></span>    echo "File doesn't exist or is in an inaccessible directory or is a symlink to a file that doesn't exist: $file" &gt;&amp;2
+<span class="anchor" id="line-3-1"></span>fi
+<span class="anchor" id="line-4"></span>
+<span class="anchor" id="line-5"></span>if [[ $file -nt ${file[1]} ]]; then
+<span class="anchor" id="line-6"></span>    printf 'file %s is newer than %s\n' "${file[@]}"
+<span class="anchor" id="line-7"></span>fi</pre><span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><p class="line862">To cut a long story short: <tt>test</tt> implements the old, portable syntax of the command.  In almost all shells (the oldest Bourne shells are the exception), <tt>[</tt> is a synonym for <tt>test</tt> (but requires a final argument of <tt>]</tt>).  Although all modern shells have built-in implementations of <tt>[</tt>, there usually still is an external executable of that name, e.g. <tt>/bin/[</tt>.  <a class="http" href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/test.html">POSIX</a> defines a mandatory feature set for <tt class="backtick">[</tt>,
+ but almost every shell offers extensions to it.  So, if you want 
+portable code, you should be careful not to use any of those extensions.
+ <span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span></p><p class="line867"><tt>[[</tt> is a new improved version of it, and is a keyword, not a program. This makes it easier to use, as shown below. <tt>[[</tt> is understood by <a href="http://mywiki.wooledge.org/KornShell">KornShell</a>, Zsh and <a href="http://mywiki.wooledge.org/BASH">BASH</a> (e.g. 2.03), but not by other POSIX shell implementations (like posh, yash or dash) or the <a href="http://mywiki.wooledge.org/BourneShell">BourneShell</a> . <span class="anchor" id="line-24"></span><span class="anchor" id="line-25"></span></p><p class="line862">Although <tt>[</tt> and <tt>[[</tt>
+ have much in common, and share many expression operators like "-f", 
+"-s", "-n", "-z", there are some notable differences.  Here is a 
+comparison list: <span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span></p><div><table><tbody><tr>  <td><p class="line891"><strong>Feature</strong></p></td>
+  <td><p class="line891"><strong>new test</strong> <tt>[[</tt></p></td>
+  <td><p class="line891"><strong>old test</strong> <tt>[</tt></p></td>
+  <td><p class="line891"><strong>Example</strong></p></td>
+</tr>
+<tr>  <td rowspan="4"><span class="anchor" id="line-28"></span><p class="line862">string comparison</p></td>
+  <td><p class="line891">&gt;</p></td>
+  <td><p class="line862">\&gt; <a href="http://mywiki.wooledge.org/BashFAQ/031#np">(*)</a></p></td>
+  <td><p class="line891"><tt>[[&nbsp;a&nbsp;&gt;&nbsp;b&nbsp;]]&nbsp;||&nbsp;echo&nbsp;"a&nbsp;does&nbsp;not&nbsp;come&nbsp;before&nbsp;b"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-29"></span><p class="line891">&lt;</p></td>
+  <td><p class="line862">\&lt; <a href="http://mywiki.wooledge.org/BashFAQ/031#np">(*)</a></p></td>
+  <td><p class="line891"><tt>[[&nbsp;az&nbsp;&lt;&nbsp;za&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"az&nbsp;comes&nbsp;before&nbsp;za"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-30"></span><p class="line862">= (or ==)</p></td>
+  <td><p class="line862">=</p></td>
+  <td><p class="line891"><tt>[[&nbsp;a&nbsp;=&nbsp;a&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"a&nbsp;equals&nbsp;a"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-31"></span><p class="line862">!=</p></td>
+  <td><p class="line862">!=</p></td>
+  <td><p class="line891"><tt>[[&nbsp;a&nbsp;!=&nbsp;b&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"a&nbsp;is&nbsp;not&nbsp;equal&nbsp;to&nbsp;b"</tt></p></td>
+</tr>
+<tr>  <td rowspan="6"><span class="anchor" id="line-32"></span><p class="line862">integer comparison</p></td>
+  <td><p class="line862">-gt</p></td>
+  <td><p class="line862">-gt</p></td>
+  <td><p class="line891"><tt>[[&nbsp;5&nbsp;-gt&nbsp;10&nbsp;]]&nbsp;||&nbsp;echo&nbsp;"5&nbsp;is&nbsp;not&nbsp;bigger&nbsp;than&nbsp;10"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-33"></span><p class="line862">-lt</p></td>
+  <td><p class="line862">-lt</p></td>
+  <td><p class="line891"><tt>[[&nbsp;8&nbsp;-lt&nbsp;9&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"8&nbsp;is&nbsp;less&nbsp;than&nbsp;9"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-34"></span><p class="line862">-ge</p></td>
+  <td><p class="line862">-ge</p></td>
+  <td><p class="line891"><tt>[[&nbsp;3&nbsp;-ge&nbsp;3&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"3&nbsp;is&nbsp;greater&nbsp;than&nbsp;or&nbsp;equal&nbsp;to&nbsp;3"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-35"></span><p class="line862">-le</p></td>
+  <td><p class="line862">-le</p></td>
+  <td><p class="line891"><tt>[[&nbsp;3&nbsp;-le&nbsp;8&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"3&nbsp;is&nbsp;less&nbsp;than&nbsp;or&nbsp;equal&nbsp;to&nbsp;8"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-36"></span><p class="line862">-eq</p></td>
+  <td><p class="line862">-eq</p></td>
+  <td><p class="line891"><tt>[[&nbsp;5&nbsp;-eq&nbsp;05&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"5&nbsp;equals&nbsp;05"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-37"></span><p class="line862">-ne</p></td>
+  <td><p class="line862">-ne</p></td>
+  <td><p class="line891"><tt>[[&nbsp;6&nbsp;-ne&nbsp;20&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"6&nbsp;is&nbsp;not&nbsp;equal&nbsp;to&nbsp;20"</tt></p></td>
+</tr>
+<tr>  <td rowspan="2"><span class="anchor" id="line-38"></span><p class="line862">conditional evaluation</p></td>
+  <td><p class="line891">&amp;&amp;</p></td>
+  <td><p class="line862">-a <a href="http://mywiki.wooledge.org/BashFAQ/031#np2">(**)</a></p></td>
+  <td><p class="line891"><tt>[[&nbsp;-n&nbsp;$var&nbsp;&amp;&amp;&nbsp;-f&nbsp;$var&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"$var&nbsp;is&nbsp;a&nbsp;file"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-39"></span><p class="line891"><tt>||</tt></p></td>
+  <td><p class="line862">-o <a href="http://mywiki.wooledge.org/BashFAQ/031#np2">(**)</a></p></td>
+  <td><p class="line891"><tt>[[&nbsp;-b&nbsp;$var&nbsp;||&nbsp;-c&nbsp;$var&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"$var&nbsp;is&nbsp;a&nbsp;device"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-40"></span><p class="line862">expression grouping</p></td>
+  <td><p class="line891"><tt>(...)</tt></p></td>
+  <td><p class="line891"><tt>\(&nbsp;...&nbsp;\)</tt> <a href="http://mywiki.wooledge.org/BashFAQ/031#np2">(**)</a></p></td>
+  <td><p class="line891"><tt>[[&nbsp;$var&nbsp;=&nbsp;img*&nbsp;&amp;&amp;&nbsp;($var&nbsp;=&nbsp;*.png&nbsp;||&nbsp;$var&nbsp;=&nbsp;*.jpg)&nbsp;]]&nbsp;&amp;&amp;</tt><br>
+<tt>echo&nbsp;"$var&nbsp;starts&nbsp;with&nbsp;img&nbsp;and&nbsp;ends&nbsp;with&nbsp;.jpg&nbsp;or&nbsp;.png"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-41"></span><p class="line862">Pattern matching</p></td>
+  <td><p class="line862">= (or ==)</p></td>
+  <td><p class="line862">(not available)</p></td>
+  <td><p class="line891"><tt>[[&nbsp;$name&nbsp;=&nbsp;a*&nbsp;]]&nbsp;||&nbsp;echo&nbsp;"name&nbsp;does&nbsp;not&nbsp;start&nbsp;with&nbsp;an&nbsp;'a':&nbsp;$name"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-42"></span><p class="line891"><a href="http://mywiki.wooledge.org/RegularExpression">RegularExpression</a> matching</p></td>
+  <td><p class="line862">=~</p></td>
+  <td><p class="line862">(not available)</p></td>
+  <td><p class="line891"><tt>[[&nbsp;$(date)&nbsp;=~&nbsp;^Fri\&nbsp;...\&nbsp;13&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"It's&nbsp;Friday&nbsp;the&nbsp;13th!"</tt></p></td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span><p class="line867"><span class="anchor" id="np"></span> <span class="anchor" id="line-45"></span>(*) This is an extension to the POSIX standard; some shells may have it, and some may not. <span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span></p><p class="line867"><span class="anchor" id="np2"></span> <span class="anchor" id="line-48"></span>(**) The <tt class="backtick">-a</tt> and <tt class="backtick">-o</tt> operators, and <tt class="backtick">(&nbsp;...&nbsp;)</tt>
+ grouping, are defined by POSIX but only for strictly limited cases, and
+ are marked as deprecated.  Use of these operators is discouraged; you 
+should use multiple <tt class="backtick">[</tt> commands instead: <span class="anchor" id="line-49"></span></p><ul><li><p class="line891"><tt class="backtick">if&nbsp;[&nbsp;"$a"&nbsp;=&nbsp;a&nbsp;]&nbsp;&amp;&amp;&nbsp;[&nbsp;"$b"&nbsp;=&nbsp;b&nbsp;];&nbsp;then&nbsp;...</tt> <span class="anchor" id="line-50"></span></p></li><li><p class="line891"><tt class="backtick">if&nbsp;[&nbsp;"$a"&nbsp;=&nbsp;a&nbsp;]&nbsp;||&nbsp;{&nbsp;[&nbsp;"$b"&nbsp;=&nbsp;b&nbsp;]&nbsp;&amp;&amp;&nbsp;[&nbsp;"$c"&nbsp;=&nbsp;c&nbsp;];};&nbsp;then&nbsp;...</tt> <span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span></p></li></ul><p class="line862">Special primitives that <tt>[[</tt> is defined to have, but <tt>[</tt> may be lacking (depending on the implementation): <span class="anchor" id="line-53"></span><span class="anchor" id="line-54"></span></p><div><table><tbody><tr>  <td><p class="line891"><strong>Description</strong></p></td>
+  <td><p class="line891"><strong>Primitive</strong></p></td>
+  <td><p class="line891"><strong>Example</strong></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-55"></span><p class="line862">entry (file or directory) exists</p></td>
+  <td><p class="line862">-e</p></td>
+  <td><p class="line891"><tt>[[&nbsp;-e&nbsp;$config&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"config&nbsp;file&nbsp;exists:&nbsp;$config"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-56"></span><p class="line862">file is newer/older than other file</p></td>
+  <td><p class="line862">-nt / -ot</p></td>
+  <td><p class="line891"><tt>[[&nbsp;$file0&nbsp;-nt&nbsp;$file1&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"$file0&nbsp;is&nbsp;newer&nbsp;than&nbsp;$file1"</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-57"></span><p class="line862">two files are the same</p></td>
+  <td><p class="line862">-ef</p></td>
+  <td><p class="line891"><tt>[[&nbsp;$input&nbsp;-ef&nbsp;$output&nbsp;]]&nbsp;&amp;&amp;&nbsp;{&nbsp;echo&nbsp;"will&nbsp;not&nbsp;overwrite&nbsp;input&nbsp;file:&nbsp;$input";&nbsp;exit&nbsp;1;&nbsp;}&nbsp;</tt></p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-58"></span><p class="line862">negation</p></td>
+  <td><p class="line862">!</p></td>
+  <td><p class="line891"><tt>[[&nbsp;!&nbsp;-u&nbsp;$file&nbsp;]]&nbsp;&amp;&amp;&nbsp;echo&nbsp;"$file&nbsp;is&nbsp;not&nbsp;a&nbsp;setuid&nbsp;file"</tt></p></td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-59"></span><span class="anchor" id="line-60"></span><p class="line874">But there are more subtle differences. <span class="anchor" id="line-61"></span></p><ul><li><p class="line862">No <a href="http://mywiki.wooledge.org/WordSplitting">WordSplitting</a> or <a href="http://mywiki.wooledge.org/glob">glob</a> expansion will be done for <tt>[[</tt> (and therefore many arguments need not be quoted): <span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span><span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span></p><pre><span class="anchor" id="line-1-2"></span> file="file name"
+<span class="anchor" id="line-2-2"></span> [[ -f $file ]] &amp;&amp; echo "$file is a file"</pre><span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span><p class="line862">will work even though $file is not quoted and contains whitespace. With <tt>[</tt> the variable needs to be quoted: <span class="anchor" id="line-68"></span><span class="anchor" id="line-69"></span><span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span></p><pre><span class="anchor" id="line-1-3"></span> file="file name"
+<span class="anchor" id="line-2-3"></span> [ -f "$file" ] &amp;&amp; echo "$file is a regular file"</pre><span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span><p class="line862">This makes <tt>[[</tt> easier to use and less error-prone. <span class="anchor" id="line-74"></span></p></li><li><p class="line862">Parentheses in <tt>[[</tt> do not need to be escaped: <span class="anchor" id="line-75"></span><span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span></p><pre><span class="anchor" id="line-1-4"></span> [[ -f $file1 &amp;&amp; ( -d $dir1 || -d $dir2) ]]
+<span class="anchor" id="line-2-4"></span> [ -f "$file1" -a \( -d "$dir1" -o -d "$dir2" \) ]</pre><span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span></li><li class="gap"><p class="line862">As of bash 4.1, string comparisons using <tt class="backtick">&lt;</tt> or <tt class="backtick">&gt;</tt> respect the current <a href="http://mywiki.wooledge.org/locale">locale</a> when done in <tt class="backtick">[[</tt>, but <strong>not</strong> in <tt class="backtick">[</tt> or <tt class="backtick">test</tt>.  In fact, <tt class="backtick">[</tt> and <tt class="backtick">test</tt> have <em>never</em> used locale collating order even though past man pages <em>said</em> they did.  Bash versions prior to 4.1 do not use locale collating order for <tt class="backtick">[[</tt> either. <span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span></p></li></ul><p class="line862">As a rule of thumb, <tt>[[</tt> is used for strings and files. If you want to compare numbers, use an <a href="http://mywiki.wooledge.org/ArithmeticExpression">ArithmeticExpression</a>, e.g. <span class="anchor" id="line-82"></span><span class="anchor" id="line-83"></span></p><p class="line867"><span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span></p><pre><span class="anchor" id="line-1-5"></span># Bash
+<span class="anchor" id="line-2-5"></span>i=0
+<span class="anchor" id="line-3-2"></span>while (( i &lt; 10 )); do ...</pre><span class="anchor" id="line-88"></span><span class="anchor" id="line-89"></span><p class="line862">When should the new test command <tt>[[</tt> be used, and when the old one <tt>[</tt>? If portability to POSIX or the <a href="http://mywiki.wooledge.org/BourneShell">BourneShell</a> is a concern, the old syntax should be used. If on the other hand the script requires <a href="http://mywiki.wooledge.org/BASH">BASH</a>, Zsh or <a href="http://mywiki.wooledge.org/KornShell">KornShell</a>, the new syntax is much more flexible. <span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span></p><p class="line862">See the <a href="http://mywiki.wooledge.org/BashGuide/TestsAndConditionals">Tests and Conditionals</a> chapter in the <a href="http://mywiki.wooledge.org/BashGuide">BashGuide</a>. <span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span></p><p class="line867">
+</p><h3 id="Theory">Theory</h3>
+<span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><p class="line862">The theory behind all of this is that <tt class="backtick">[</tt> is a simple command, whereas <tt class="backtick">[[</tt> is a compound command. <tt class="backtick">[</tt>
+ receives its arguments as any other command would, but most compound 
+commands introduce a special parsing context which is performed before 
+any other processing. Typically this step looks for special <tt class="backtick">reserved&nbsp;words</tt> or <tt class="backtick">control&nbsp;operators</tt>
+ specific to each compound command which split it into parts or affect 
+control-flow. The Bash test expression's logical and/or operators can 
+short-circuit because they are special in this way (as are e.g. <tt class="backtick">;;</tt>, <tt class="backtick">elif</tt>, and <tt class="backtick">else</tt>). Contrast with <a href="http://mywiki.wooledge.org/ArithmeticExpression">ArithmeticExpression</a>,
+ where all expansions are performed left-to-right in the usual way, with
+ the resulting string being subject to interpretation as arithmetic. <span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span></p><ul><li>The
+ arithmetic compound command has no special operators. It has only one 
+evaluation context - a single arithmetic expression. Arithmetic 
+expressions have operators too, some of which affect control flow during
+ the arithmetic evaluation step (which happens last). <span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span><pre><span class="anchor" id="line-1-6"></span> # Bash
+<span class="anchor" id="line-2-6"></span> (( 1 + 1 == 2 ? 1 : $(echo "This doesn't do what you think..." &gt;&amp;2; echo 1) ))</pre><span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span></li><li class="gap">Test
+ expressions on the other hand do have "operators" as part of their 
+syntax, which lie on the other end of the spectrum (evaluated first). <span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span><span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span><pre><span class="anchor" id="line-1-7"></span> # Bash
+<span class="anchor" id="line-2-7"></span> [[ '1 + 1' -eq 2 &amp;&amp; $(echo "...but this probably does what you expect." &gt;&amp;2) ]]</pre><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span></li><li class="gap">Old-style tests have no way of controlling evaluation because its arguments aren't special. <span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span><span class="anchor" id="line-112"></span><span class="anchor" id="line-113"></span><pre><span class="anchor" id="line-1-8"></span> # Bash
+<span class="anchor" id="line-2-8"></span> [ $((1 + 1)) -eq 2 -o $(echo 'No short-circuit' &gt;&amp;2) ]</pre><span class="anchor" id="line-114"></span><span class="anchor" id="line-115"></span></li><li class="gap"><p class="line862">Different error handling is made possible by searching for special compound command tokens before performing expansions. <tt class="backtick">[[</tt>
+ can detect the presence of expansions that don't result in a word yet 
+still throw an error if none are specified. Ordinary commands can't. <span class="anchor" id="line-116"></span><span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span><span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span><span class="anchor" id="line-122"></span></p><pre><span class="anchor" id="line-1-9"></span> # Bash 
+<span class="anchor" id="line-2-9"></span> ( set -- $(echo 'Unquoted null expansions do not result in "null" parameters.' &gt;&amp;2); echo $# )
+<span class="anchor" id="line-3-3"></span> [[ -z $(:) ]] &amp;&amp; echo '-z was supplied an arg and evaluated empty.'
+<span class="anchor" id="line-4-1"></span> [ -z ] &amp;&amp; echo '-z wasn't supplied an arg, and no errors are reported. There's no possible way Bash could enforce specifying an argument here.'
+<span class="anchor" id="line-5-1"></span> [[ -z ]] # This will cause an error that ordinary commands can't detect.</pre><span class="anchor" id="line-123"></span><span class="anchor" id="line-124"></span></li><li class="gap"><p class="line862">For the very same reason, because <tt class="backtick">[</tt>'s operators are just "arguments", unlike <tt class="backtick">[[</tt>, you <em>can</em> specify operators as parameters to an ordinary <tt class="backtick">test</tt> command. This might be seen as a limitation of <tt class="backtick">[[</tt>, but the downsides outweigh the good almost always. <span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span><span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span><span class="anchor" id="line-129"></span><span class="anchor" id="line-130"></span><span class="anchor" id="line-131"></span><span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span></p><pre><span class="anchor" id="line-1-10"></span> # ksh93
+<span class="anchor" id="line-2-10"></span>
+<span class="anchor" id="line-3-4"></span> args=(0 -gt 1)
+<span class="anchor" id="line-4-2"></span> 
+<span class="anchor" id="line-5-2"></span> (( $(print '0 &gt; 1') )) # Valid command, Exit status is 1 as expected.
+<span class="anchor" id="line-6-1"></span> [ "${args[@]}" ]       # Also exit 1. 
+<span class="anchor" id="line-7-1"></span> [[ ${args[@]} ]]       # Valid command, but is misleading. Exit status 0. set -x reveals the resulting command is [[ -n '0 -gt 1' ]]</pre><span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span></li><li class="gap">Do
+ keep in mind which operators belong to which shell constructs. Order of
+ expansions can cause surprising results especially when mixing and 
+nesting different evaluation contexts! <span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span><span class="anchor" id="line-139"></span><span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span><pre><span class="anchor" id="line-1-11"></span> # ksh93
+<span class="anchor" id="line-2-11"></span> typeset -i x=0
+<span class="anchor" id="line-3-5"></span> 
+<span class="anchor" id="line-4-3"></span> ( print "$(( ++x, ${ x+=1; print $x &gt;&amp;2;}1, x ))"      ) # Prints 1, 2
+<span class="anchor" id="line-5-3"></span> ( print "$(( $((++x)), ${ x+=1; print $x &gt;&amp;2;}1, x ))" ) # Prints 2, 2 - because expansions are performed first.</pre><span class="anchor" id="line-143"></span></li></ul><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-144"></span><a href="http://mywiki.wooledge.org/CategoryShell">CategoryShell</a> <span class="anchor" id="line-145"></span><span class="anchor" id="bottom"></span></p></div><p id="pageinfo" class="info" dir="ltr" lang="en">BashFAQ/031  (last edited 2015-05-29 05:53:45 by <span title="??? @ ip68-4-231-113.oc.oc.cox.net[68.4.231.113]">ip68-4-231-113</span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><a href="http://mywiki.wooledge.org/BashFAQ/031?action=edit&amp;editor=text" name="texteditlink" rel="nofollow">Edit (Text)</a></li><li><a href="http://mywiki.wooledge.org/BashFAQ/031?action=edit&amp;editor=gui">Edit (GUI)</a></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="http://mywiki.wooledge.org/BashFAQ/031?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="http://mywiki.wooledge.org/BashFAQ/031?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/BashFAQ/031">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option selected="selected" value="show">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Delete Page</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Subscribe User</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Remove Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+
+
+
+</body></html>

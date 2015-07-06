@@ -1,0 +1,40 @@
+who
+whoami
+date
+cd
+ls
+cp
+mv
+rm
+rmdir #solo se cartella vuota altrimenti rm -r -f
+stat	#(per info specifiche usa --format="%...")
+head
+cut	#(-d setta separatore -f seleziona campo)
+sort
+rev	#solo su parole (non inverte linee)
+grep
+tee
+wc
+<
+>
+>>
+pwd
+set | more
+groups
+users
+top
+echo
+cat
+more
+ps
+timeout
+sleep
+link
+unlink
+chmod
+chown
+chgrp
+head	#prime linee (negativo per escludere le ultime)
+tail	#ultime linee (default 10)
+set arg1 arg2 ....	#modifica $1 $2 .... in arg1 arg2 ....
+shift			#sposta argomenti. es $0 $1 $2 -> $0 $1 ($2 è diventato $1)
